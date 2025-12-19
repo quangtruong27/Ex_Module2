@@ -1,4 +1,4 @@
-package ss1_oop_overview.BT01;
+package ss1_oop_overview.student_manager;
 
 import util.Input;
 

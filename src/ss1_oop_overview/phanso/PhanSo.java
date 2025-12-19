@@ -1,4 +1,4 @@
-package ss1_oop_overview.PhanSo;
+package ss1_oop_overview.phanso;
 
 import java.util.Scanner;
 
@@ -53,6 +53,16 @@ public class PhanSo {
 		thuong.tu = tu  * ps.mau;
 		thuong.mau = mau * ps.tu;
 		return thuong;
+	}
+
+	void check(){
+		if(tu == 0){
+			System.out.println("Phan so bang 0");
+		}else if(tu > 0 && mau > 0 || tu < 0 && mau < 0){
+			System.out.println("Phan so duong");
+		}else{
+			System.out.println("Phan so am");
+		}
 	}
 }
 
