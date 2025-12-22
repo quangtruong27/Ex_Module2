@@ -30,10 +30,11 @@ public class Student {
 	}
 
 	public void setName(String name) {
-		if (name == null || name.trim().isEmpty()) {
-			System.out.println("Khong co ten");
-		} else {
+		if (name != null && !name.isEmpty()) {
 			this.name = name;
+		} else {
+			System.out.println("Khong co ten");
+
 		}
 	}
 
