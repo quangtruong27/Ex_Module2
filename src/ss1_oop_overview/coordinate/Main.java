@@ -5,9 +5,9 @@ public class Main {
 		Point p1 = new Point();
 		Point p2 = new Point();
 
-		System.out.print("Nhap diem 1: ");
+		System.out.println("Nhap diem 1: ");
 		p1.input();
-		System.out.print("Nhap diem 2: ");
+		System.out.println("Nhap diem 2: ");
 		p2.input();
 
 		System.out.println("Diem 1: ");

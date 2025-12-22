@@ -7,7 +7,16 @@ public class PhanSo {
 	int tu;
 	int mau;
 
-	void input(){
+	PhanSo() {
+
+	}
+
+	PhanSo(int tu, int mau) {
+		this.tu = tu;
+		this.mau = mau;
+	}
+
+	void input() {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Nhap vao phan so: ");
@@ -23,44 +32,44 @@ public class PhanSo {
 
 	}
 
-	void output(){
+	void output() {
 		System.out.printf("%d/%d", tu, mau);
 	}
 
-	PhanSo cong(PhanSo ps){
+	PhanSo cong(PhanSo ps) {
 		PhanSo tong = new PhanSo();
 		tong.tu = tu * ps.mau + mau * ps.tu;
 		tong.mau = mau * ps.mau;
 		return tong;
 	}
 
-	PhanSo tru(PhanSo ps){
+	PhanSo tru(PhanSo ps) {
 		PhanSo hieu = new PhanSo();
 		hieu.tu = tu * ps.mau - mau * ps.tu;
 		hieu.mau = mau * ps.mau;
 		return hieu;
 	}
 
-	PhanSo nhan(PhanSo ps){
+	PhanSo nhan(PhanSo ps) {
 		PhanSo tich = new PhanSo();
-		tich.tu = tu  * ps.tu;
+		tich.tu = tu * ps.tu;
 		tich.mau = mau * ps.mau;
 		return tich;
 	}
 
-	PhanSo chia(PhanSo ps){
+	PhanSo chia(PhanSo ps) {
 		PhanSo thuong = new PhanSo();
-		thuong.tu = tu  * ps.mau;
+		thuong.tu = tu * ps.mau;
 		thuong.mau = mau * ps.tu;
 		return thuong;
 	}
 
-	void check(){
-		if(tu == 0){
+	void check() {
+		if (tu == 0) {
 			System.out.println("Phan so bang 0");
-		}else if(tu > 0 && mau > 0 || tu < 0 && mau < 0){
+		} else if (tu > 0 && mau > 0 || tu < 0 && mau < 0) {
 			System.out.println("Phan so duong");
-		}else{
+		} else {
 			System.out.println("Phan so am");
 		}
 	}
