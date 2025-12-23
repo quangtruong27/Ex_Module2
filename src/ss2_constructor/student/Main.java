@@ -5,7 +5,7 @@ public class Main {
 		// hop le
 		System.out.println("=== SINH VIEN BAN DAU ===");
 		Student s1 = new Student(1, "Nguyen Van A", 8.5);
-		s1.display();
+		s1.output();
 
 		// doi ten
 		System.out.println("\n*** Setter Name ***");
@@ -22,6 +22,6 @@ public class Main {
 		System.out.println("Điem moi: " + s1.getScore());
 
 		System.out.println("\n=== THON TIN CUOI CUNG ===");
-		s1.display();
+		s1.output();
 	}
 }

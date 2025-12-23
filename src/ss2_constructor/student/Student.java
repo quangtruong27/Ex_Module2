@@ -50,7 +50,7 @@ public class Student {
 		}
 	}
 
-	public void display() {
+	public void output() {
 		System.out.println("ID: " + id + " | Name: " + name + " | Score: " + score);
 	}
 }
