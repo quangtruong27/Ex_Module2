@@ -8,6 +8,9 @@ public class Student {
 
 	private static int studentCount = 0;
 
+	public Student(){
+
+	}
 	public Student(int id, String name, double score) {
 		this.id = id;
 		this.name = name;

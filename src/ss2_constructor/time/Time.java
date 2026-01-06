@@ -34,7 +34,7 @@ public class Time {
 	}
 
 	//tao doi tuong moi dua tren du lie cua doi tuong cu
-	public Time(Time time){
+	public Time(Time time) {
 		this.hour = time.hour;
 		this.minutur = time.minutur;
 		this.second = time.second;
@@ -64,7 +64,7 @@ public class Time {
 		this.second = second;
 	}
 
-	public void output(){
-		System.out.printf("%02d:%02d:%02d\n", hour, minutur,second);
+	public void output() {
+		System.out.printf("%02d:%02d:%02d\n", hour, minutur, second);
 	}
 }
