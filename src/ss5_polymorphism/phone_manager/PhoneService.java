@@ -179,25 +179,10 @@ public class PhoneService {
 
 	// 7. total
 	public void totalMoney() {
-		double total = 0;
-		for (Phone p : phones) {
-			if (p instanceof NewPhone) {
-				total += p.getPrice() * ((NewPhone) p).getQuantity();
-			} else {
-				total += p.getPrice();
-			}
-		}
-		System.out.printf("Tong tien: %,.0f VND\n", total);
+
 	}
 
 	// 8. GIAM GIA
 	public void discountOldPhone(double percent) {
-		for (Phone p : phones) {
-			if (p instanceof OldPhone) {
-				double newPrice = p.getPrice() * (100 - percent) / 100;
-				p.setPrice(newPrice);
-			}
-		}
-		System.out.println("Da giam gia " + percent + "% cho dien thoai cu!");
 	}
 }
