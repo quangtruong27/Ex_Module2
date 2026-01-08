@@ -183,6 +183,6 @@ public class PhoneService {
 	}
 
 	// 8. GIAM GIA
-	public void discountOldPhone(double percent) {
+	public void discountOldPhone() {
 	}
 }
