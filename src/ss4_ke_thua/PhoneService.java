@@ -28,7 +28,7 @@ public class PhoneService {
 	}
 
 	public void displayOld() {
-		System.out.println("----- DANH SACH DIEN CU -----");
+		System.out.println("----- DANH SACH DIEN THOAI CU -----");
 		for (PhoneOld p : phoneOlds) {
 			p.showInfo();
 		}
@@ -40,9 +40,9 @@ public class PhoneService {
 		String id;
 
 		if (isNew) {
-			id = "DTM" + (phoneNews.size() + 1);
+			id = "DTM%03d" + (phoneNews.size() + 1);
 		} else {
-			id = "DTC" + (phoneOlds.size() + 1);
+			id = "DTC%03d" + (phoneOlds.size() + 1);
 		}
 
 		System.out.print("Nhap ten dien thoai: ");

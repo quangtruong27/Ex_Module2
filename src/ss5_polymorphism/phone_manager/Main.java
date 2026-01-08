@@ -1,4 +1,4 @@
-package ss4_ke_thua;
+package ss5_polymorphism.phone_manager;
 
 import java.util.Scanner;
 
@@ -7,22 +7,22 @@ public class Main {
 	private static PhoneService phoneService = new PhoneService();
 
 	public static void main(String[] args) {
-
 		int choice = 0;
 
 		do {
-			System.out.println("***CHUONG TRINH QUAN LY DIEN THOAI");
+			System.out.println("\n*** CHUONG TRINH QUAN LY DIEN THOAI ***");
 			System.out.println("1. Xem danh sach dien thoai");
 			System.out.println("2. Them moi");
 			System.out.println("3. Cap nhat");
 			System.out.println("4. Xoa");
-			System.out.println("5. Sap xeo theo gia");
+			System.out.println("5. Sap xep theo gia");
 			System.out.println("6. Tim kiem");
 			System.out.println("7. Tinh tong tien");
 			System.out.println("8. Giam gia cho dien thoai cu");
 			System.out.println("9. Thoat");
-			System.out.print("Moi ban nhap (1-10): ");
-			choice = sc.nextInt();
+			System.out.print("Moi ban nhap (1-9): ");
+
+			choice = Integer.parseInt(sc.nextLine());
 
 			switch (choice) {
 				case 1:
@@ -46,15 +46,13 @@ public class Main {
 				case 7:
 					phoneService.totalMoney();
 					break;
-
 				case 8:
 					System.out.print("Nhap % giam gia: ");
-					double percent = sc.nextDouble();
-					sc.nextLine();
+					double percent = Double.parseDouble(sc.nextLine());
 					phoneService.discountOldPhone(percent);
 					break;
 				case 9:
-					System.out.println("Thoat");
+					System.out.println("Thoat chuong trinh.");
 					System.exit(0);
 				default:
 					System.out.println("Lua chon khong hop le");
@@ -64,15 +62,15 @@ public class Main {
 
 	public static void viewList() {
 		int subChoice = 0;
-
 		do {
-			System.out.println("*** XEM DANH SACH DIEN THOAI ***");
+			System.out.println("\n*** XEM DANH SACH DIEN THOAI ***");
 			System.out.println("1. Xem tat ca");
 			System.out.println("2. Xem dien thoai cu");
 			System.out.println("3. Xem dien thoai moi");
 			System.out.println("4. Tro ve menu chinh");
+			System.out.print("Chon: ");
 
-			subChoice = sc.nextInt();
+			subChoice = Integer.parseInt(sc.nextLine());
 
 			switch (subChoice) {
 				case 1:
@@ -94,14 +92,14 @@ public class Main {
 
 	public static void addNew() {
 		int subChoice = 0;
-
 		do {
-			System.out.println("*** THEM MOI ***");
+			System.out.println("\n*** THEM MOI ***");
 			System.out.println("1. Them moi dien thoai cu");
 			System.out.println("2. Them moi dien thoai moi");
 			System.out.println("3. Tro ve menu chinh");
+			System.out.print("Chon: ");
 
-			subChoice = sc.nextInt();
+			subChoice = Integer.parseInt(sc.nextLine());
 
 			switch (subChoice) {
 				case 1:
@@ -120,14 +118,14 @@ public class Main {
 
 	public static void arrange() {
 		int subChoice = 0;
-
 		do {
-			System.out.println("*** SAP XEP ***");
+			System.out.println("\n*** SAP XEP ***");
 			System.out.println("1. Tang dan");
 			System.out.println("2. Giam dan");
 			System.out.println("3. Tro ve menu chinh");
+			System.out.print("Chon: ");
 
-			subChoice = sc.nextInt();
+			subChoice = Integer.parseInt(sc.nextLine());
 
 			switch (subChoice) {
 				case 1:
@@ -146,16 +144,15 @@ public class Main {
 
 	public static void search() {
 		int choice;
-
 		do {
-			System.out.println("=== MENU TIM KIEM ===");
+			System.out.println("\n=== MENU TIM KIEM ===");
 			System.out.println("1. Tim kiem tat ca dien thoai");
 			System.out.println("2. Tim kiem dien thoai cu");
 			System.out.println("3. Tim kiem dien thoai moi");
 			System.out.println("4. Tro ve menu chinh");
+			System.out.print("Chon: ");
 
-			choice = sc.nextInt();
-			sc.nextLine();
+			choice = Integer.parseInt(sc.nextLine());
 
 			switch (choice) {
 				case 1:
@@ -177,25 +174,22 @@ public class Main {
 
 	public static void searchSubMenu(int type) {
 		int subChoice;
-
 		do {
-			System.out.println("--- LUA CHON TIM KIEM ---");
+			System.out.println("\n--- LUA CHON TIM KIEM ---");
 			System.out.println("1. Tim theo gia");
 			System.out.println("2. Tim theo ten");
 			System.out.println("3. Tim theo hang");
 			System.out.println("4. Tro ve menu Tim kiem");
+			System.out.print("Chon: ");
 
-			subChoice = sc.nextInt();
-			sc.nextLine();
+			subChoice = Integer.parseInt(sc.nextLine());
 
 			switch (subChoice) {
 				case 1:
 					System.out.print("Nhap gia min: ");
-					double min = sc.nextDouble();
-
+					double min = Double.parseDouble(sc.nextLine());
 					System.out.print("Nhap gia max: ");
-					double max = sc.nextDouble();
-					sc.nextLine();
+					double max = Double.parseDouble(sc.nextLine());
 					phoneService.searchByPriceType(type, min, max);
 					break;
 
@@ -219,5 +213,4 @@ public class Main {
 			}
 		} while (true);
 	}
-
 }
