@@ -1,4 +1,4 @@
-package ss5_polymorphism.phone_manager;
+package ss6_abstract_interface.phone_manager;
 
 import java.util.Scanner;
 
@@ -48,6 +48,8 @@ public class Main {
 					break;
 				case 8:
 					System.out.print("Nhap % giam gia: ");
+					double percent = Double.parseDouble(sc.nextLine());
+					phoneService.discountOldPhone(percent);
 					break;
 				case 9:
 					System.out.println("Thoat chuong trinh.");

@@ -1,4 +1,4 @@
-package ss5_polymorphism.phone_manager;
+package ss6_abstract_interface.phone_manager;
 
 import java.util.Scanner;
 
@@ -31,6 +31,12 @@ public class NewPhone extends Phone {
 
 	@Override
 	public void showInfo() {
-		System.out.println("ID: " + getId() + " | " + "Name: " + getNamePhone() + " | " + "Price: " + getPrice() + " | " + "Warranty: " + getWarranty() + " | " + "Manufacturer: " + getManufacturer() + " | " + "Quantity: " + quantity);
+		super.showInfo();
+		System.out.println(" | Quantity: " + quantity);
+	}
+
+	@Override
+	public double caculateTotalPrice() {
+		return this.getPrice() * this.quantity;
 	}
 }
