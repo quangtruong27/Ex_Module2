@@ -84,7 +84,7 @@ public class MyArrayList {
 
 		// Kiểm tra index hợp lệ
 		if (index < 0 || index > size) {
-			throw new IndexOutOfBoundsException("Index không hợp lệ: " + index);
+			throw new IndexOutOfBoundsException("Index khong hop le: " + index);
 		}
 
 		// Nếu mảng chưa được cấp phát
@@ -120,7 +120,7 @@ public class MyArrayList {
 	// d. set(int index, int element): thay thế phần tử tại index
 	public void set(int index, int element) {
 		if (index < 0 || index >= size) {
-			throw new IndexOutOfBoundsException("Index không hợp lệ: " + index);
+			throw new IndexOutOfBoundsException("Index khong hop le: " + index);
 		}
 		elementData[index] = element;
 	}
@@ -128,7 +128,7 @@ public class MyArrayList {
 	// e. get(int index): lấy phần tử tại index
 	public int get(int index) {
 		if (index < 0 || index >= size) {
-			throw new IndexOutOfBoundsException("Index không hợp lệ: " + index);
+			throw new IndexOutOfBoundsException("Index khong hop le: " + index);
 		}
 		return elementData[index];
 	}
@@ -156,7 +156,7 @@ public class MyArrayList {
 	// h. remove(int index): xóa phần tử tại index
 	public int remove(int index) {
 		if (index < 0 || index >= size) {
-			throw new IndexOutOfBoundsException("Index không hợp lệ: " + index);
+			throw new IndexOutOfBoundsException("Index khong hop le: " + index);
 		}
 
 		// Lưu lại giá trị bị xóa

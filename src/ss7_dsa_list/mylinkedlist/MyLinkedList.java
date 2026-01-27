@@ -56,7 +56,7 @@ public class MyLinkedList {
 
 		// kiểm tra index không hợp lệ
 		if (index < 0 || index > size) {
-			System.out.println("Index không hợp lệ");
+			System.out.println("Index khng hop le");
 			return;
 		}
 
@@ -88,7 +88,7 @@ public class MyLinkedList {
 	public int removeFirst() {
 
 		if (head == null) {
-			System.out.println("Danh sách rỗng");
+			System.out.println("Danh sach rong");
 			return -1;
 		}
 
@@ -108,7 +108,7 @@ public class MyLinkedList {
 	public int removeLast() {
 
 		if (head == null) {
-			System.out.println("Danh sách rỗng");
+			System.out.println("Danh sach rong");
 			return -1;
 		}
 
@@ -136,7 +136,7 @@ public class MyLinkedList {
 	public int remove(int index) {
 
 		if (index < 0 || index >= size) {
-			System.out.println("Index không hợp lệ");
+			System.out.println("Index khong hop le");
 			return -1;
 		}
 
@@ -176,7 +176,7 @@ public class MyLinkedList {
 	public int get(int index) {
 
 		if (index < 0 || index >= size) {
-			System.out.println("Index không hợp lệ");
+			System.out.println("Index khong hop le");
 			return -1;
 		}
 
@@ -191,7 +191,7 @@ public class MyLinkedList {
 	public void set(int index, int element) {
 
 		if (index < 0 || index >= size) {
-			System.out.println("Index không hợp lệ");
+			System.out.println("Index khong hop le");
 			return;
 		}
 
