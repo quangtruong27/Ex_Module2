@@ -8,8 +8,7 @@ public class Main {
 		String input = "Tran Quang Truong";
 		System.out.println("a. Dem ky tu:");
 
-		Map<Character, Integer> charMap =
-				MapExercise.countCharacter(input);
+		Map<Character, Integer> charMap = MapExercise.countCharacter(input);
 
 		for (Map.Entry<Character, Integer> entry : charMap.entrySet()) {
 			System.out.println(entry.getKey() + ": " + entry.getValue());
@@ -18,8 +17,7 @@ public class Main {
 		String[] names = {"An", "Binh", "An", "Nam", "Lan", "Binh"};
 
 		System.out.println("b. Kiem tra ten duy naht:");
-		Map<String, Integer> nameMap =
-				MapExercise.countName(names);
+		Map<String, Integer> nameMap = MapExercise.countName(names);
 
 		for (Map.Entry<String, Integer> entry : nameMap.entrySet()) {
 			if (entry.getValue() == 1) {
