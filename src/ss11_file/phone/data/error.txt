@@ -1,0 +1,3 @@
+Dòng 1: Mã điện thoại không đúng định dạng
+Dòng 2: Mã điện thoại không đúng định dạng,Tên điện thoai không được trống.,Giá bán không được số âm.,Thời gian bảo hành không được số âm.,Hãng sản xuất không được trống.
+Dòng 3: Mã điện thoại không đúng định ,Thời gian bảo hành phải là số nguyên.

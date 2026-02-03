@@ -1,0 +1,5 @@
+ID,Phone Name,Price,Warranty,Manufacturer,Battery Status(%),Description,Quantity
+DTM001,Iphone 15,30000000.0,12,Apple,,,10
+DTC001,Iphone X,5000000.0,6,Apple,85,Tray xuoc,
+DTM002,,-19920,-12,,,,-15
+DTM002,SamSung,100000,x,SamSung,,,-10
