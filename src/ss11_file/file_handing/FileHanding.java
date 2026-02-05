@@ -71,48 +71,49 @@ public class FileHanding {
 
 
 	//d. Viết chương trình kiểm tra xem 1 đường dẫn đang chỉ đến 1 file hay 1 thư mục.
-	public static void checkPath(String path){
+	public static void checkPath(String path) {
 		File file = new File(path);
 
-		if(!file.exists()){
+		if (!file.exists()) {
 			System.out.println("Duong dan khong ton tai");
-		} else if (file.isFile()){
+		} else if (file.isFile()) {
 			System.out.println("Day la FILE");
-		} else if (file.isDirectory()){
+		} else if (file.isDirectory()) {
 			System.out.println("Day la FOLDER");
 		}
 	}
 
 	//e. Viết chương trình xóa 1 file hoặc 1 thư mục cho trước.
-	public static void deleteFile (String path){
+	public static void deleteFile(String path) {
 		File file = new File(path);
-		if (!file.exists()){
+		if (!file.exists()) {
 			System.out.println("Khong ton tai");
 			return;
 		}
 
-		if (file.delete()){
+		if (file.delete()) {
 			System.out.println("Xoa thanh cong");
-		}else{
+		} else {
 			System.out.println("Xoa that bai");
 		}
 	}
 
 	// f. Viết chương trình đổi tên 1 file hoặc 1 thư mục cho trước.
-	public static void renameFile(String oldPath, String newPath){
+	public static void renameFile(String oldPath, String newPath) {
 		File oldFile = new File(oldPath);
 		File newFile = new File(newPath);
-		if (!oldFile.exists()){
+		if (!oldFile.exists()) {
 			System.out.println("Khong ton tai");
 			return;
 		}
 
-		if(oldFile.renameTo(newFile)){
+		if (oldFile.renameTo(newFile)) {
 			System.out.println("Doi ten File thanh cong");
-		}else{
+		} else {
 			System.out.println("Doi that bai");
 		}
 	}
+
 	public static void main(String[] args) {
 		String path = "src/ss11_file/file_handing/input.txt";
 		String link = "src/ss11_file/file_handing/countword.txt";

@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class PhoneService {
 
-	private static List<Phone> phones = new ArrayList<>();
+	private static List<Phone> phones = new ArrayList<>();// KHÔNG CẦN CÁI NÀY NỮA, ĐỔI SANG VÀO TRONG HÀM LUÔN
 	private static Scanner sc = new Scanner(System.in);
 
 	static {
@@ -54,7 +54,6 @@ public class PhoneService {
 		System.out.println("--- NHAP THONG TIN ---");
 		Phone p;
 
-		// Logic tạo ID tự động (dựa trên size hoặc cách bạn muốn)
 		if (isNew) {
 			p = new NewPhone();
 			p.setId("DTM" + (phones.size() + 1));
